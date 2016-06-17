@@ -28,8 +28,10 @@ clf4 = GradientBoostingClassifier(n_estimators=100, learning_rate = 1.0, max_dep
 
 from pandas.tools.plotting import scatter_matrix
 import pylab
-####pd.scatter_matrix(parkinson_data, alpha = 0.3, figsize = (30,30), diagonal = 'kde')
-####pylab.savefig("scatter" + ".png")
+
+##plot and save the scatter plot of features
+pd.scatter_matrix(parkinson_data, alpha = 0.3, figsize = (30,30), diagonal = 'kde')
+pylab.savefig("scatter" + ".png")
 
 
 n_patients = parkinson_data.shape[0]   ##number of patients
